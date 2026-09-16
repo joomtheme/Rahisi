@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>MOD_RAHISI</name>
+    <author>JoomTheme</author>
+    <authorEmail>support@joomtheme.com</authorEmail>
+    <authorUrl>https://joomtheme.com</authorUrl>
+    <creationDate>16 September 2026</creationDate>
+    <copyright>(C) 2026 Rahisi Contributors</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>0.1.0-alpha4</version>
+    <description>MOD_RAHISI_DESC</description>
+    <namespace path="src">Rahisi\Module\Rahisi</namespace>
+    <files>
+        <folder module="mod_rahisi">services</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+        <filename>LICENSE.txt</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/mod_rahisi.ini</language>
+        <language tag="en-GB">en-GB/mod_rahisi.sys.ini</language>
+        <language tag="tr-TR">tr-TR/mod_rahisi.ini</language>
+        <language tag="tr-TR">tr-TR/mod_rahisi.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="MOD_RAHISI_OPTIONS">
+                <field name="panel_open" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="MOD_RAHISI_PANEL_OPEN">
+                    <option value="0">JNO</option><option value="1">JYES</option>
+                </field>
+                <field name="show_scale" type="radio" layout="joomla.form.field.radio.switcher" default="1" label="MOD_RAHISI_SHOW_SCALE" description="MOD_RAHISI_VISIBILITY_DESC">
+                    <option value="0">JHIDE</option><option value="1">JSHOW</option>
+                </field>
+                <field name="show_spacing" type="radio" layout="joomla.form.field.radio.switcher" default="1" label="MOD_RAHISI_SHOW_SPACING">
+                    <option value="0">JHIDE</option><option value="1">JSHOW</option>
+                </field>
+                <field name="show_contrast" type="radio" layout="joomla.form.field.radio.switcher" default="1" label="MOD_RAHISI_SHOW_CONTRAST">
+                    <option value="0">JHIDE</option><option value="1">JSHOW</option>
+                </field>
+                <field name="show_help" type="radio" layout="joomla.form.field.radio.switcher" default="1" label="MOD_RAHISI_SHOW_HELP">
+                    <option value="0">JHIDE</option><option value="1">JSHOW</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" />
+                <field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL">
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

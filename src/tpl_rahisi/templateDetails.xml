@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" client="site" method="upgrade">
+    <name>rahisi</name>
+    <version>0.1.0-alpha4</version>
+    <creationDate>16 September 2026</creationDate>
+    <author>JoomTheme</author>
+    <authorEmail>support@joomtheme.com</authorEmail>
+    <authorUrl>https://joomtheme.com</authorUrl>
+    <copyright>(C) 2026 Rahisi Contributors</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>TPL_RAHISI_DESC</description>
+    <parent>cassiopeia</parent>
+    <inheritable>0</inheritable>
+    <files>
+        <filename>templateDetails.xml</filename>
+        <filename>index.php</filename>
+        <filename>LICENSE.txt</filename>
+    </files>
+    <media destination="templates/site/rahisi" folder="media">
+        <folder>css</folder>
+    </media>
+    <positions>
+        <position>topbar</position>
+        <position>below-top</position>
+        <position>menu</position>
+        <position>search</position>
+        <position>banner</position>
+        <position>top-a</position>
+        <position>top-b</position>
+        <position>main-top</position>
+        <position>main-bottom</position>
+        <position>breadcrumbs</position>
+        <position>sidebar-left</position>
+        <position>sidebar-right</position>
+        <position>bottom-a</position>
+        <position>bottom-b</position>
+        <position>footer</position>
+        <position>debug</position>
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/tpl_rahisi.ini</language>
+        <language tag="en-GB">en-GB/tpl_rahisi.sys.ini</language>
+        <language tag="tr-TR">tr-TR/tpl_rahisi.ini</language>
+        <language tag="tr-TR">tr-TR/tpl_rahisi.sys.ini</language>
+        <language tag="en-GB">en-GB/rahisi.sys.ini</language>
+        <language tag="tr-TR">tr-TR/rahisi.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="brand" type="radio" layout="joomla.form.field.radio.switcher" default="1" label="TPL_RAHISI_BRAND">
+                    <option value="0">JNO</option><option value="1">JYES</option>
+                </field>
+                <field name="logoFile" type="media" types="images" filter="string" label="TPL_RAHISI_LOGO" description="TPL_RAHISI_LOGO_DESC" showon="brand:1" />
+                <field name="logoAlt" type="text" filter="string" label="TPL_RAHISI_LOGO_ALT" description="TPL_RAHISI_LOGO_ALT_DESC" showon="brand:1" />
+                <field name="siteTitle" type="text" filter="string" label="TPL_RAHISI_TITLE" description="TPL_RAHISI_TITLE_DESC" />
+                <field name="siteDescription" type="text" filter="string" label="TPL_RAHISI_TAGLINE" />
+                <field name="fluidContainer" type="list" default="0" label="TPL_RAHISI_WIDTH">
+                    <option value="0">TPL_RAHISI_STATIC</option>
+                    <option value="1">TPL_RAHISI_FLUID</option>
+                </field>
+            </fieldset>
+            <fieldset name="reading" label="TPL_RAHISI_READING">
+                <field name="defaultScale" type="list" default="100" label="TPL_RAHISI_DEFAULT_SCALE" description="TPL_RAHISI_DEFAULT_SCALE_DESC">
+                    <option value="100">100%</option><option value="125">125%</option><option value="150">150%</option><option value="175">175%</option><option value="200">200%</option>
+                </field>
+                <field name="readingLineHeight" type="list" default="1.7" label="TPL_RAHISI_LINE_HEIGHT">
+                    <option value="1.6">1.6</option><option value="1.7">1.7</option><option value="1.8">1.8</option>
+                </field>
+                <field name="articleWidth" type="list" default="72" label="TPL_RAHISI_ARTICLE_WIDTH" description="TPL_RAHISI_ARTICLE_WIDTH_DESC">
+                    <option value="60">60 ch</option><option value="65">65 ch</option><option value="72">72 ch</option>
+                </field>
+                <field name="readingPalette" type="list" default="teal" label="TPL_RAHISI_PALETTE">
+                    <option value="teal">TPL_RAHISI_PALETTE_TEAL</option>
+                    <option value="slate">TPL_RAHISI_PALETTE_SLATE</option>
+                    <option value="earth">TPL_RAHISI_PALETTE_EARTH</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

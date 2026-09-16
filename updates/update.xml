@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<updates>
+    <update>
+        <name>Rahisi Package</name>
+        <description>Reading preferences and a Cassiopeia child template by JoomTheme.</description>
+        <element>pkg_rahisi</element>
+        <type>package</type>
+        <version>0.1.0-alpha4</version>
+        <client>site</client>
+        <infourl title="Rahisi release notes">https://github.com/JoomTheme/rahisi/releases/tag/v0.1.0-alpha4</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/JoomTheme/rahisi/releases/download/v0.1.0-alpha4/pkg_rahisi-0.1.0-alpha4.zip</downloadurl>
+        </downloads>
+        <changelogurl>https://raw.githubusercontent.com/JoomTheme/rahisi/main/updates/changelog.xml</changelogurl>
+        <tags>
+            <tag>alpha</tag>
+        </tags>
+        <maintainer>JoomTheme</maintainer>
+        <maintainerurl>https://joomtheme.com</maintainerurl>
+        <targetplatform name="joomla" version="^6\.(?:[1-9][0-9]*)(?:\.|$)" />
+        <php_minimum>8.3</php_minimum>
+        <sha256>7f8c91bce043a2220728ffe49b748b02c75ce48bce058a581db8ae4725b867c9</sha256>
+    </update>
+</updates>

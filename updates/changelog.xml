@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>pkg_rahisi</element>
+        <type>package</type>
+        <version>0.1.0-alpha4</version>
+        <fix><item>Use a Rahisi-owned back-to-top language key with English and Turkish translations.</item></fix>
+        <change><item>Validate language keys referenced by template PHP.</item></change>
+        <note><item>Maintainer reported JED Checker passing and a successful template update on Joomla 6.1.3. Alpha testing only; broader accessibility and end-to-end update testing remain pending.</item></note>
+    </changelog>
+    <changelog>
+        <element>pkg_rahisi</element>
+        <type>package</type>
+        <version>0.1.0-alpha3</version>
+        <addition>
+            <item>Add logo selection, alternative text and site-name branding fallback.</item>
+            <item>Add reading defaults, article width and three colour palettes.</item>
+            <item>Add module expansion, visibility and translated help settings.</item>
+        </addition>
+        <change>
+            <item>Preserve hidden preferences and restore current site defaults on Reset.</item>
+            <item>Introduce a Cassiopeia 6.1.3 based index override; no core files are changed.</item>
+        </change>
+        <note><item>Alpha release. Repeat JED and Joomla integration tests; GitHub publication remains pending.</item></note>
+    </changelog>
+    <changelog>
+        <element>pkg_rahisi</element>
+        <type>package</type>
+        <version>0.1.0-alpha2</version>
+        <fix>
+            <item>Keep developer manifests out of the installation archive.</item>
+            <item>Add template-name system language aliases for JED Checker.</item>
+            <item>Use full day-month-year creation dates in all extension manifests.</item>
+        </fix>
+        <addition>
+            <item>Add JoomTheme author contact details.</item>
+            <item>Prepare a package-level update feed with SHA-256 and Joomla changelog XML.</item>
+            <item>Ship a separate source archive and regression tests for the reported packaging issues.</item>
+        </addition>
+        <note><item>Alpha testing only. GitHub publication and live update testing remain pending.</item></note>
+    </changelog>
+    <changelog>
+        <element>pkg_rahisi</element>
+        <type>package</type>
+        <version>0.1.0-alpha1</version>
+        <addition><item>Initial child template, preference plugin and module with English and Turkish translations.</item></addition>
+    </changelog>
+</changelogs>

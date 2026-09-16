@@ -1,0 +1,74 @@
+/** Rahisi 0.1.0-alpha4 | (C) 2026 Rahisi Contributors | GPL-2.0-or-later */
+html[data-rahisi-scale="100"] { font-size: 100%; }
+html[data-rahisi-scale="125"] { font-size: 125%; }
+html[data-rahisi-scale="150"] { font-size: 150%; }
+html[data-rahisi-scale="175"] { font-size: 175%; }
+html[data-rahisi-scale="200"] { font-size: 200%; }
+html[data-rahisi-spacing="true"] .com-content-article__body {
+    line-height: 2;
+    letter-spacing: .04em;
+    word-spacing: .12em;
+}
+html[data-rahisi-spacing="true"] .com-content-article__body p { margin-block-end: 2em; }
+/* Deliberately limited to article reading contrast, not a universal recolouring overlay. */
+html[data-rahisi-contrast="true"] .com-content-article__body {
+    color: #000;
+    background-color: #fff;
+    padding: 1rem;
+    border: 2px solid currentColor;
+}
+html[data-rahisi-contrast="true"] .com-content-article__body a:not(.btn) {
+    color: #00377a;
+    text-decoration: underline;
+}
+.rahisi-panel {
+    color: #182c38;
+    background: #fff;
+    border: 2px solid #52656d;
+    border-radius: .5rem;
+    margin-block: 1rem;
+    max-inline-size: 100%;
+    overflow-wrap: anywhere;
+    font-size: 1rem;
+}
+.rahisi-panel summary { padding: .8rem 1rem; cursor: pointer; font-weight: 700; }
+.rahisi-panel__body { padding: 0 1rem 1rem; }
+.rahisi-panel fieldset { border: 0; padding: 0; margin: 0; min-inline-size: 0; }
+.rahisi-panel legend { font-size: 1rem; font-weight: 700; float: none; inline-size: auto; }
+.rahisi-panel label { display: block; }
+.rahisi-panel select {
+    display: block;
+    inline-size: 100%;
+    padding: .5rem;
+    color: #182c38;
+    background: #fff;
+    border: 2px solid #52656d;
+    margin-block: .4rem .8rem;
+}
+.rahisi-panel .rahisi-panel__check {
+    display: flex;
+    align-items: start;
+    gap: .7rem;
+    padding-block: .5rem;
+    min-block-size: 2.75rem;
+    cursor: pointer;
+}
+.rahisi-panel input[type="checkbox"] {
+    flex-shrink: 0;
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
+    margin-block-start: .25rem;
+    accent-color: var(--rahisi-accent, #143d43);
+}
+.rahisi-panel button {
+    color: #fff;
+    background: var(--rahisi-accent, #143d43);
+    border: 2px solid var(--rahisi-accent, #143d43);
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.rahisi-panel__status { margin-block: .75rem 0; }
+.rahisi-panel__help { color: #374b55; font-size: .95rem; margin-block: .2rem 1rem; }
+.rahisi-panel__status:empty { display: none; }
+@media print { .rahisi-panel { display: none; } }

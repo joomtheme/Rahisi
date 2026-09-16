@@ -1,0 +1,54 @@
+/** Rahisi 0.1.0-alpha4 | (C) 2026 Rahisi Contributors | GPL-2.0-or-later */
+:root {
+    --rahisi-ink: #182c38;
+    --rahisi-paper: #fffdf8;
+    --rahisi-link: #175a70;
+    --rahisi-accent: #143d43;
+}
+body.site {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.125rem;
+    line-height: var(--rahisi-line-height, 1.7);
+    color: var(--rahisi-ink);
+    background-color: var(--rahisi-paper);
+}
+body.site .container-header {
+    background-color: var(--rahisi-accent);
+    background-image: none;
+}
+body.site main { min-inline-size: 0; }
+body.site .com-content-article__body {
+    max-inline-size: var(--rahisi-article-width, 72ch);
+    overflow-wrap: anywhere;
+    text-align: start;
+}
+body.site main p { margin-block-end: 1.2em; }
+body.site main :is(h1, h2, h3, h4, h5, h6) {
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+    scroll-margin-block-start: 2rem;
+}
+body.site main a:not(.btn) {
+    color: var(--rahisi-link);
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+body.site :is(button, select, textarea, input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]), .btn) {
+    font-size: 1rem;
+    min-block-size: 2.75rem;
+    max-inline-size: 100%;
+}
+body.site :is(.btn, button) { white-space: normal; }
+body.site .mod-menu a { padding-block: .6rem; }
+body.site :focus-visible {
+    outline: 3px solid #12394c !important;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px #fff !important;
+}
+body.site img { max-inline-size: 100%; height: auto; }
+body.site .rahisi-brand-image { max-block-size: 6rem; inline-size: auto; object-fit: contain; }
+body.site .rahisi-brand-title { white-space: normal; overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto !important; }
+    body.site :is(.btn, .nav-link, .back-to-top) { transition: none; }
+}
