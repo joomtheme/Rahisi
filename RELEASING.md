@@ -8,19 +8,19 @@
 - GitHub asset digest matches the local installer:
   `7f8c91bce043a2220728ffe49b748b02c75ce48bce058a581db8ae4725b867c9`.
 - Maintainer reported JED Checker passing and the template update succeeding.
+- GitHub now confirms `prerelease: true` after the maintainer's release edit.
+- Published update.xml and changelog.xml were fetched successfully after import.
 - Sources and update/changelog feeds are supplied in this repository import.
 - Packaged code and documentation remain unchanged to preserve installer bytes.
 
 ## Remaining manual actions
 
-1. Edit the Alpha4 release and select **Set as a pre-release**. GitHub reported
-   `prerelease: false` at inspection, despite the alpha name and release text.
-2. Optionally attach `rahisi-source-0.1.0-alpha4.zip`; only the installer was attached
+1. Optionally attach `rahisi-source-0.1.0-alpha4.zip`; only the installer was attached
    at inspection. GitHub's automatic source ZIP is not a Joomla installer.
-3. The Alpha4 tag predates this source import and points to the initial README/LICENSE
+2. The Alpha4 tag predates this source import and points to the initial README/LICENSE
    commit. It has deliberately not been moved. Use main for current source or the
    separately generated developer archive. Future tags must reference tested source.
-4. On a backed-up test site, enable the Rahisi update site and verify feed retrieval.
+3. On a backed-up test site, enable the Rahisi update site and verify feed retrieval.
    An actual offered upgrade requires an older installed version and an update
    stability setting that permits alpha releases. Alpha4 should not offer itself
    as a newer version to an already updated Alpha4 installation.
