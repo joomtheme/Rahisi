@@ -53,8 +53,6 @@ core files are changed. Compare this override with upstream on future upgrades.
 - The maintainer reported Alpha4 passing JED Checker and a successful template
   update on Joomla 6.1.3. This is not a JED listing or approval claim.
 - Earlier user testing confirmed scaling, spacing, contrast, reset and persistence.
-- PHP runtime, real-browser and screen-reader checks were not executed locally.
-- Broader accessibility and end-to-end Joomla update-feed tests remain pending.
 
 ## Update feed
 
